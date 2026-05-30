@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#091E3A" />
+      <stop offset="100%" stop-color="#061A35" />
+    </linearGradient>
+    <linearGradient id="neonGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#12B8F2" />
+      <stop offset="100%" stop-color="#00E5FF" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#blueGrad)" rx="110"/>
+  
+  <!-- Outer glowing ring -->
+  <circle cx="256" cy="256" r="190" fill="none" stroke="url(#neonGrad)" stroke-width="12" stroke-dasharray="12 18" opacity="0.85"/>
+  
+  <!-- Face wireframe simulation -->
+  <path d="M190 180 Q256 120 322 180" fill="none" stroke="url(#neonGrad)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M160 256 Q256 380 352 256" fill="none" stroke="url(#neonGrad)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M220 220 C220 210, 240 210, 240 220 C240 230, 220 230, 220 220 Z" fill="url(#neonGrad)"/>
+  <path d="M272 220 C272 210, 292 210, 292 220 C292 230, 272 230, 272 220 Z" fill="url(#neonGrad)"/>
+  
+  <!-- Scanner Line -->
+  <line x1="110" y1="256" x2="402" y2="256" stroke="#00E5FF" stroke-width="10" stroke-linecap="round" opacity="0.95"/>
+  
+  <!-- AIHR Text -->
+  <text x="256" y="435" fill="#FFFFFF" font-family="Outfit, sans-serif" font-weight="900" font-size="56" text-anchor="middle" letter-spacing="6">AIHR</text>
+</svg>
